@@ -1,0 +1,47 @@
+{
+  "name": "rick-and-morty",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index",
+  "scripts": {
+    "start": "webpack serve --mode development --open --hot",
+    "prod": "webpack --mode production",
+    "predeploy": "npm run prod",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darya-kznv/rick-and-morty.git"
+  },
+  "author": "Darya Kazantseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darya-kznv/rick-and-morty/issues"
+  },
+  "homepage": "https://darya-kznv.github.io/rick-and-morty/",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.2.0",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "axios": "^0.21.1",
+    "history": "^5.0.0",
+    "postcss-import": "^14.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}

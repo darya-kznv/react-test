@@ -1,0 +1,85 @@
+.character-info {
+    padding: 1rem;
+}
+
+.character-info__inner {
+    padding: 2rem 0;
+}
+
+.character-info__head {
+    margin-bottom: 2.5rem;
+
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.character-info__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-info__text {
+    flex-grow: 1;
+}
+
+.character-info__item {
+    margin-bottom: 0.5rem;
+
+    font-size: 1.1em;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+.character-info__item:last-child { margin-bottom: 0; }
+
+.character-info__item span {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #222222;
+}
+
+.character-info__item[data-status] span {
+    position: relative;
+}
+
+.character-info__item[data-status] span::before {
+    position: absolute;
+    top: 50%;
+    left: -12px;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 100%;
+
+    transform: translateY(-50%);
+
+    content: '';
+}
+
+.character-info__item[data-status="Alive"] span::before {
+    background-color: limegreen;
+}
+
+.character-info__item[data-status="Dead"] span::before {
+    background-color: #fa3434;
+}
+
+.character-info__item[data-status="unknown"] span::before {
+    background-color: lightslategray;
+}
+
+.character-info__img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.character-info__no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
