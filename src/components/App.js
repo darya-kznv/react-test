@@ -12,7 +12,7 @@ import './characters/characters.css';
 
 function App() {
     return (
-        <Router basename="/rick-and-morty">
+        <Router basename="/react-test">
             <div className="App">
                 <Switch>
                     <Route

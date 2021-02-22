@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/darya-kznv/rick-and-morty/issues"
   },
-  "homepage": "https://darya-kznv.github.io/rick-and-morty/",
+  "homepage": "https://darya-kznv.github.io/react-test/",
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
