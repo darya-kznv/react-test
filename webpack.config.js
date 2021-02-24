@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 require('babel-polyfill');
 
 module.exports = {
@@ -27,12 +27,12 @@ module.exports = {
                     {
                         loader: 'style-loader'
                     },
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: '/dist',
-                        },
-                    },
+                    // {
+                    //     loader: MiniCssExtractPlugin.loader,
+                    //     options: {
+                    //         publicPath: '/dist',
+                    //     },
+                    // },
                     {
                         loader: 'css-loader',
                     },
@@ -53,8 +53,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index.html"
         }),
-        new MiniCssExtractPlugin({
-            filename: 'index.css',
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: 'index.css',
+        // }),
     ]
 };
