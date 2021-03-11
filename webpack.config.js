@@ -30,21 +30,21 @@ module.exports = ( env, argv ) => {
                     use: [
                         isDevelopmentMode ? 'style-loader' : {
                             loader: MiniCssExtractPlugin.loader,
-                            options: {
-                                publicPath: '/dist',
-                            }
+                            // options: {
+                            //     publicPath: '/dist',
+                            // }
                         },
                         {
                             loader: 'css-loader',
                         },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                postcssOptions: {
-                                    config: path.resolve(__dirname, 'postcss.config.js'),
-                                },
-                            },
-                        },
+                        // {
+                        //     loader: 'postcss-loader',
+                        //     options: {
+                        //         postcssOptions: {
+                        //             config: path.resolve(__dirname, 'postcss.config.js'),
+                        //         },
+                        //     },
+                        // },
 
                     ]
                 }
@@ -54,9 +54,9 @@ module.exports = ( env, argv ) => {
             new HtmlWebpackPlugin({
                 template: "./src/index.html"
             }),
-            new MiniCssExtractPlugin({
-                filename: 'index.css',
-            }),
+            // new MiniCssExtractPlugin({
+            //     filename: 'index.css',
+            // }),
 
         ],
         optimization: {
